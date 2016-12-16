@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.github.yukihane.java.book-felix</groupId>
+    <artifactId>book-felix</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.packtpub.felix.bookshelf-inventory-api</artifactId>
+  <version>1.5.0</version>
+
+  <packaging>bundle</packaging>
+
+  <name>Bookshelf Inventory API</name>
+  <description>Defines the API for the Bookshelf inventory.
+  </description>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>3.2.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Category>sample</Bundle-Category>
+            <Bundle-SymbolicName>${project.artifactId}
+            </Bundle-SymbolicName>
+            <Export-Package>
+              com.packtpub.felix.bookshelf.inventory.api
+            </Export-Package>
+          </instructions>
+          <ignoreLock>true</ignoreLock>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
