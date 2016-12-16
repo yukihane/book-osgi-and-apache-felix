@@ -16,6 +16,7 @@
 
   <modules>
     <module>com.packtpub.felix.bookshelf-inventory-api</module>
+    <module>com.packtpub.felix.bookshelf-inventory-impl-mock</module>
   </modules>
 
 </project>
