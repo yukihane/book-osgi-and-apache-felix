@@ -19,4 +19,12 @@
     <module>com.packtpub.felix.bookshelf-inventory-impl-mock</module>
   </modules>
 
+  <distributionManagement>
+    <!-- releases repo -->
+    <repository>
+      <id>repo-rel</id>
+      <url>file:///Users/dewa/tmp-obr/felixbook/releases</url>
+    </repository>
+  </distributionManagement>
+
 </project>

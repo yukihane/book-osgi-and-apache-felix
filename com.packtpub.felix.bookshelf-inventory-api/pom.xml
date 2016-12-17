@@ -36,6 +36,8 @@
               com.packtpub.felix.bookshelf.inventory.api
             </Export-Package>
           </instructions>
+          <remoteOBR>repo-rel</remoteOBR>
+          <prefixUrl>file:///Users/dewa/tmp-obr/felixbook/releases</prefixUrl>
           <ignoreLock>true</ignoreLock>
         </configuration>
       </plugin>
